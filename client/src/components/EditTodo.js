@@ -6,7 +6,7 @@ const EditTodo = ({ todo }) => {
   const editTodo = async (id) => {
     try {
       const body = { description };
-      await fetch(`http://localhost:5000/todos/${id}`, {
+      await fetch(`/todos/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json"
