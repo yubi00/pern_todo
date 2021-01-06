@@ -16,6 +16,8 @@ const InputTodo = () => {
       });
       await jsonData.json();
       setDescription("");
+
+      window.location = "/";
     } catch (err) {
       console.log(err.message);
     }

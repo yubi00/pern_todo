@@ -17,7 +17,7 @@ const ListTodo = () => {
 
   useEffect(() => {
     getTodos();
-  }, [todos]);
+  }, []);
 
   const deleteTodo = async (id) => {
     try {
